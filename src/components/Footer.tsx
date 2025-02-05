@@ -1,14 +1,15 @@
-import { FaFacebook, FaTwitter, FaLinkedin, FaTiktok } from "react-icons/fa";
+import { FaLinkedin, FaTiktok, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <footer>
       <div className="social-icons">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <FaFacebook size={24} />
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram size={24} />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter size={24} />
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+          <FaXTwitter size={24} />
         </a>
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={24} />
