@@ -32,9 +32,33 @@ nav a {
   margin: 0 15px;
   font-weight: bold;
 }
+/* Links de navegación */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
 
-nav a:hover {
-  text-decoration: underline;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+/* Contenedor del logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Ajusta según el tamaño del logo */
+  width: auto;
+  cursor: pointer;
 }
 
 /* Contenedor principal */
