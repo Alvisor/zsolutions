@@ -5,12 +5,14 @@ import "slick-carousel/slick/slick-theme.css";
 // Importar los logos directamente
 import AndesLogo from "../assets/logos/AndesLogo.png";
 import VasagenLogo from "../assets/logos/VasagenLogo.png";
-import WallyLogo from "../assets/logos/WallyLogo.png";
+import RitboxLogo from "../assets/logos/Ritbox.png";
+import EventosZLogo from "../assets/logos/EventosZ.png";
 
 const clients = [
   { name: "Universidad de los Andes", logo: AndesLogo },
   { name: "VASAGEN", logo: VasagenLogo },
-  { name: "Wally", logo: WallyLogo }
+  { name: "Ritbox", logo: RitboxLogo },
+  { name: "EventosZ", logo: EventosZLogo }
 ];
 
 const ClientCarousel = () => {

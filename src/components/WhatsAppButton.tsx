@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaWhatsapp, FaTimes } from "react-icons/fa"; 
+import { motion } from "framer-motion";
 import "../styles/contact-form.css"; 
 
 const ContactForm = () => {
@@ -18,21 +19,30 @@ const ContactForm = () => {
   return (
     <div>
       {!isOpen ? (
-        <button 
+        <motion.button 
           className="whatsapp-button" 
           onClick={() => setIsOpen(true)}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          whileHover={{ scale: 1.1 }}
         >
           <FaWhatsapp size={20} style={{ marginRight: "8px" }} /> Contactar por WhatsApp
-        </button>
+        </motion.button>
       ) : (
-        <div className="contact-card">
+        <motion.div 
+          className="contact-card"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <button className="close-button" onClick={() => setIsOpen(false)}>
             <FaTimes size={16} />
           </button>
           <h2>Contáctanos</h2>
 
           {submitted ? (
-            <p className="success-message">✅Pronto nos pondremos en contacto contigo.</p>
+            <p className="success-message">✅ Pronto nos pondremos en contacto contigo.</p>
           ) : (
             <form onSubmit={handleSubmit}>
               <label>Nombre:</label>
@@ -58,7 +68,7 @@ const ContactForm = () => {
               <button type="submit">Enviar</button>
             </form>
           )}
-        </div>
+        </motion.div>
       )}
     </div>
   );
