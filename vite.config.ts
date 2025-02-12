@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Hace que las rutas sean relativas
+  base: '/',
   build: {
-    outDir: "dist", // Asegura que el output vaya a la carpeta correcta
+    outDir: "dist", 
   },
 });
