@@ -176,3 +176,38 @@ footer {
   transform: scale(1.2); /* Efecto de agrandado al pasar el mouse */
   color: #1da1f2; /* Color diferente al hacer hover */
 }
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  /* Navbar responsiva */
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Ajuste de tamaño del logo */
+  .logo {
+    height: 40px; /* Un tamaño más adecuado para móviles */
+  }
+
+
+  /* Sección de clientes responsiva */
+  .clients-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .client-card {
+    width: 90%;
+    margin: auto;
+  }
+}

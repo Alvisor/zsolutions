@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre iconos */
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2); /* Agrandar iconos al pasar el mouse */
+    color: #1da1f2; /* Azul para hover (puedes cambiarlo) */
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    margin: 5px 0;
+    opacity: 0.8;
+  }
+  

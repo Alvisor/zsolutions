@@ -16,6 +16,22 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ocultar el texto del botón en móviles */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    width: 50px; /* Botón más pequeño */
+    height: 50px;
+    border-radius: 50%; /* Lo hacemos circular */
+    padding: 10px;
+    font-size: 0; /* Oculta el texto dentro del botón */
+  }
+
+  .whatsapp-button svg {
+    font-size: 24px; /* Asegura que el icono siga visible */
+  }
 }
 
 .whatsapp-button:hover {
@@ -25,13 +41,14 @@
 /* Tarjeta de formulario flotante */
 .contact-card {
   position: fixed;
-  bottom: 50px;
+  bottom: 80px;
   right: 20px;
-  width: 320px;
   background: white;
   padding: 20px;
+  width: 320px;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
   z-index: 1000;
 }
 
@@ -40,21 +57,24 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #ccc;
+  background: #ff4d4d; /* Rojo para mejor visibilidad, puedes cambiarlo */
+  color: white;
   border: none;
-  width: 24px;
-  height: 24px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  line-height: 0; /* Evita que el icono se desplace */
 }
 
 .close-button:hover {
-  background: #999;
+  background: #d43f3f;
 }
-
 /* Estilos del formulario */
 .contact-card h2 {
   font-size: 18px;
